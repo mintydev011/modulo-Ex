@@ -2,46 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
     android:orientation="vertical"
-    android:padding="32dp"
-    android:gravity="center">
+    android:padding="32dp">
 
     <TextView
-        android:text="Mod Calculator"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Mod Calculator"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/inputA"
-        android:hint="Base number (a)"
-        android:inputType="numberSigned"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:hint="Base number (a)"
+        android:inputType="numberSigned"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/inputM"
-        android:hint="Modulus (m)"
-        android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:hint="Modulus (m)"
+        android:inputType="number"
+        android:textColorHint="#FFFFFF" />
 
     <Button
         android:id="@+id/btnCalculate"
-        android:text="Calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/primary_mint"
+        android:text="Calculate"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tvResult"
-        android:text="Result: —"
-        android:textSize="20sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Result: —"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
 
 </LinearLayout>
