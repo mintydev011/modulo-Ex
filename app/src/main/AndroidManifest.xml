@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ModuloEx">
         <activity
+            android:name=".CeasarCypherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModCalculatorActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

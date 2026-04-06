@@ -1,56 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:gravity="center"
+    android:backgroundTint="@color/background"
     android:orientation="vertical"
-    android:padding="32dp">
+    android:padding="24dp"
+    android:background="#121212">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Mod Calculator"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="48dp"
+        android:text="Modolu Ex"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/inputA"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Base number (a)"
-        android:inputType="numberSigned"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF" />
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/inputM"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:hint="Modulus (m)"
-        android:inputType="number"
-        android:textColorHint="#FFFFFF" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMod"
+            android:text="Mod Calculator"
+            android:backgroundTint="@color/primary_mint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            android:layout_weight="1"/>
 
-    <Button
-        android:id="@+id/btnCalculate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/primary_mint"
-        android:text="Calculate"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCaesar"
+            android:text="Caesar Cipher"
+            android:backgroundTint="@color/primary_mint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            android:layout_weight="1"/>
 
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result: —"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp" />
+    </LinearLayout>
 
 </LinearLayout>
